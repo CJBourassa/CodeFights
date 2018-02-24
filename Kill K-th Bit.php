@@ -1,3 +1,4 @@
+
 <?php
 
 // In order to stop the Mad Coder evil genius you need to decipher the encrypted 
@@ -33,5 +34,8 @@
 // [output] integer
 
 function killKthBit($n, $k) {
-  return $n & ~(2**($k-1));
+  // ex. $n = 37 and $k = 3 (3rd bit)
+  // 37 - (37 & 4)
+  // bit 3 is set, so subtract value of 3rd bit (4) from $n to "kill" it
+  return $n - ($n & (2 ** ($k-1)));
 }
