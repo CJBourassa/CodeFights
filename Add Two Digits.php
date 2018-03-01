@@ -16,12 +16,7 @@
 // The sum of the first and second digits of the input number.
 
 function addTwoDigits($n) {
-
-$n = strval($n); // Turn the two digit number into a string
-  
-// Strings are stored as arrays in PHP, 
-// so read each digit as your would if 
-// they were stored in an array;
-return $n[0] + $n[1]; 
+// split the digits apart and sum them together
+return array_sum(str_split($n)); 
 }
 ?>
