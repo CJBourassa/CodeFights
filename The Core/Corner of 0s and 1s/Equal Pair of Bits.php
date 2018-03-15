@@ -1,8 +1,6 @@
 <?php
-/* You're given two integers, n and m. Find position of the rightmost pair of 
- * equal bits in their binary representations (it is guaranteed that such 
- * a pair exists), counting from right to left.
- */
+
+// https://codefights.com/arcade/code-arcade/corner-of-0s-and-1s/6SLJChm9N3fEgr2R7
 
 function equalPairOfBits($n, $m) {
   return $n + $m + 1 & ~($m) - $n ;
