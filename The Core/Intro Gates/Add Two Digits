@@ -1,4 +1,7 @@
 <?php
+
+// https://codefights.com/arcade/code-arcade/intro-gates/wAGdN6FMPkx7WBq66/solutions
+
 function addTwoDigits($n) {
     return array_sum(str_split($n));  // split the digits apart and sum them together
 }
