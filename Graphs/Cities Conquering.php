@@ -29,7 +29,8 @@ function citiesConquering($n, $roads) {
         
         // get number of time a city appeared in the list
         $count = array_count_values($list);
-
+        
+        // go through each city
         for ($i=0; $i<$n;$i++)
             // if this city hasn't been taken over and it has less than 2 neighbors
             if (!in_array($i, $takenOverList) && $count[$i] < 2){
