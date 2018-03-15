@@ -1,6 +1,5 @@
 <?php
 function addTwoDigits($n) {
-// split the digits apart and sum them together
-    return array_sum(str_split($n)); 
+    return array_sum(str_split($n));  // split the digits apart and sum them together
 }
 ?>
