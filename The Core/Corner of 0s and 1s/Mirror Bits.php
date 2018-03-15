@@ -1,21 +1,6 @@
 <?php
 
-//Reverse the order of the bits in a given integer.
-
-//Example
-//For a = 97, the output should be
-//mirrorBits(a) = 67.
-//97 equals to 1100001 in binary, which is 1000011 after mirroring, and that is 67 in base 10.
-//For a = 8, the output should be
-//mirrorBits(a) = 1.
-
-//[execution time limit] 4 seconds (php)
-
-//[input] integer a
-//Guaranteed constraints:
-//5 ≤ a ≤ 105.
-
-//[output] integer
+// https://codefights.com/arcade/code-arcade/corner-of-0s-and-1s/e3zfPNTwTa9qTQzcX
 
 function mirrorBits($a) {
     return bindec(strrev(decbin($a)));
